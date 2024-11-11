@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro - Local Shop</title>
+    <style>
+        /* Basic reset and body styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('homepage.png') no-repeat center center/cover;
+            color: white;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Slight overlay for readability */
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .register-button {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Hero section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: calc(100vh - 91px); /* Full screen minus header */
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            max-width: 600px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button.start {
+            background-color: white;
+            color: black;
+        }
+
+        .button.learn-more {
+            background-color: #6a4ff5;
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="logo.png" alt="Agro Logo">
+            <a href="#">Agro</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Caracteristici</a>
+        <a href="#">Despre</a>
+        <a href="#">F.A.Q.</a>
+        <a href="#">Autentificare</a>
+        <a href="#" class="register-button">Înregistrare</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Cel mai bun magazin pentru producători locali</h1>
+    <div class="buttons">
+        <a href="#" class="button start">Începe</a>
+        <a href="#" class="button learn-more">Află mai multe</a>
+    </div>
+</section>
+
+</body>
+</html>
